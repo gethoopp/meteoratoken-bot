@@ -50,7 +50,7 @@ def print_config(args):
 async def run_bot(args):
     """Run the bot with given arguments"""
     # Support both PUMP_WALLET_ADDRESS and WALLET_ADDRESS (from existing .env)
-    wallet = args.wallet or os.getenv("PUMP_WALLET_ADDRESS") or os.getenv("WALLET_ADDRESS", "DZPuFxBZ5s6h1uevPCTpsDbiLiToKmJGLPjprWFhhX6T")
+    wallet = args.wallet or os.getenv("PUMP_WALLET_ADDRESS") or os.getenv("WALLET_ADDRESS", "YourWalletAddressHere111111111111111111111111")
     private_key = args.private_key or os.getenv("PUMP_PRIVATE_KEY")
     
     tp_levels = [float(x.strip()) for x in args.tp.split(",")]
@@ -81,7 +81,7 @@ async def run_bot(args):
 async def check_positions(args):
     """One-time check positions without continuous monitoring"""
     # Support both PUMP_WALLET_ADDRESS and WALLET_ADDRESS (from existing .env)
-    wallet = args.wallet or os.getenv("PUMP_WALLET_ADDRESS") or os.getenv("WALLET_ADDRESS", "DZPuFxBZ5s6h1uevPCTpsDbiLiToKmJGLPjprWFhhX6T")
+    wallet = args.wallet or os.getenv("PUMP_WALLET_ADDRESS") or os.getenv("WALLET_ADDRESS", "YourWalletAddressHere111111111111111111111111")
     
     bot = PumpFunBot(
         wallet_address=wallet,

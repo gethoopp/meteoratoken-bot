@@ -81,16 +81,16 @@ TELEGRAM_CHAT_ID=your_chat_id
 
 ```
 # Buy 0.05 SOL worth of a token
-/buy DiaXHsNJwvGXEjx1HN7phGL7YfHPtBuvzHoCk28Apump 0.05
+/buy TokenMintAddress123456789abcdefghijklmnopump 0.05
 
 # Set 50% take profit for all tokens
 /settp 50
 
 # Set 30% stop loss for specific token
-/setsl DBULL 30
+/setsl MYTOKEN 30
 
 # Create limit buy order
-/limitbuy DBULL 0.00003 0.05
+/limitbuy MYTOKEN 0.00003 0.05
 
 # Check realized PnL this month
 /pnl month

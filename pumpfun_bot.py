@@ -3,7 +3,7 @@
 Pump.fun Auto TP/SL Bot
 Bot untuk auto close position berdasarkan take profit dan stop loss percentage.
 
-Wallet: DZPuFxBZ5s6h1uevPCTpsDbiLiToKmJGLPjprWFhhX6T
+Wallet: YourWalletAddressHere111111111111111111111111
 """
 
 import asyncio
@@ -509,7 +509,7 @@ async def main():
     """Main entry point"""
     # Configuration from environment
     # Support both PUMP_WALLET_ADDRESS and WALLET_ADDRESS (from existing .env)
-    wallet_address = os.getenv("PUMP_WALLET_ADDRESS") or os.getenv("WALLET_ADDRESS", "DZPuFxBZ5s6h1uevPCTpsDbiLiToKmJGLPjprWFhhX6T")
+    wallet_address = os.getenv("PUMP_WALLET_ADDRESS") or os.getenv("WALLET_ADDRESS", "YourWalletAddressHere111111111111111111111111")
     private_key = os.getenv("PUMP_PRIVATE_KEY")  # Optional - for actual trading
     telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
     telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID")
