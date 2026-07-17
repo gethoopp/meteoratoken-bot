@@ -1,0 +1,9 @@
+# Meteora & Pump.fun Bot Dependencies
+requests>=2.31.0
+python-telegram-bot>=20.7
+python-dotenv>=1.0.0
+aiohttp>=3.9.0
+
+# Solana (required for actual trading - auto TP/SL)
+solders>=0.21.0
+base58>=2.1.0
