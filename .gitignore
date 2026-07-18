@@ -37,6 +37,11 @@ Thumbs.db
 *.jpg
 *.jpeg
 
+# Web frontend (Vue.js)
+web/node_modules/
+web/dist/
+web/.cache/
+
 # Multica/Kiro agent context (internal)
 .multica/
 .kiro/
